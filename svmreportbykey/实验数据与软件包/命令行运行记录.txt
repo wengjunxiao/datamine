@@ -1,0 +1,42 @@
+Microsoft Windows XP [版本 5.1.2600]
+(C) 版权所有 1985-2001 Microsoft Corp.
+
+C:\Documents and Settings\Administrator>d:
+
+D:\>cd D:\Backup\我的文档\vcproject\libsvm-2.84\windows
+
+D:\Backup\我的文档\vcproject\libsvm-2.84\windows>svmscale b-unscale.txt>b-data.txt
+
+D:\Backup\我的文档\vcproject\libsvm-2.84\windows>svmtrain b-data.txt b-model.txt
+*
+optimization finished, #iter = 73
+nu = 0.087672
+obj = -51.238108, rho = 0.543881
+nSV = 68, nBSV = 54
+Total nSV = 68
+
+D:\Backup\我的文档\vcproject\libsvm-2.84\windows>svmpredict b-data.txt b-model.txt b-result.
+txt
+Accuracy = 97.3646% (665/683) (classification)
+
+D:\Backup\我的文档\vcproject\libsvm-2.84\windows>svmtrain -v 3 b-data.txt
+*
+optimization finished, #iter = 57
+nu = 0.091079
+obj = -33.811628, rho = 0.639331
+nSV = 50, nBSV = 36
+Total nSV = 50
+*
+optimization finished, #iter = 63
+nu = 0.110423
+obj = -42.400523, rho = 0.407800
+nSV = 58, nBSV = 47
+Total nSV = 58
+*
+optimization finished, #iter = 55
+nu = 0.082286
+obj = -29.950152, rho = 0.725174
+nSV = 45, nBSV = 33
+Total nSV = 45
+Cross Validation Accuracy = 96.7789%
+D:\Backup\我的文档\vcproject\libsvm-2.84\windows>
